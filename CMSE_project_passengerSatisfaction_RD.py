@@ -25,8 +25,8 @@ from PIL import Image
 import joblib
 
 #Load the dataset
-flight_df = pd.read_csv('/Users/radhikavittalshenoy/Downloads/archive-2/passenger_exp_train.csv')
-flight_df_original=pd.read_csv('/Users/radhikavittalshenoy/Downloads/archive-2/passenger_exp_train.csv')
+flight_df = pd.read_csv('passenger_exp_train.csv')
+flight_df_original=pd.read_csv('passenger_exp_train.csv')
 
 #Imputation is performed on the Arrival Delay in Minutes column where N/A values is filled with zero
 #The assumption that the people who have filled the survey didn't experience arrival delay
@@ -77,7 +77,7 @@ if selected == 'Home':
         
         st.markdown('<h3 style="color:black;font-size:20px;"><em>As a brand, we are dedicated to crafting unforgettable experiences for every passenger that takes to the skies with us, ensuring every moment is filled with delight and wonder.</em></h3>', unsafe_allow_html=True)
         
-        image = Image.open('/Users/radhikavittalshenoy/Downloads/homepage_image.jpg')
+        image = Image.open('homepage_image.jpg')
         st.image(image, width=600)
 
         st.markdown('<em>Welcome to FlyHigh Airlines Home page! At FlyHigh Airlines, we are dedicated to providing all our flyers with an exceptional and comfortable flying experience. Our brand strives to offer the best-in-class services, ensuring their satisfaction is our top priority. With a focus on efficient operations and unparalleled customer service, we aim to make your journey with us as smooth and enjoyable as possible.Our Dashboard provides a comprehensive overview of key performance indicators, customer feedback, and operational insights. From passenger satisfaction ratings to on-time performance statistics, this page offers a holistic view of our airline performance. With an emphasis on safety, comfort,entertainmen and convenience, we constantly strive to enhance our services and meet the evolving needs of our valued passengers.</em>', unsafe_allow_html=True)
@@ -298,7 +298,7 @@ elif selected == 'Analysis Page':
     st.markdown('<em>The FlyHigh R&D team can leverage these intricate passenger experience insights to uncover the depths of customer satisfaction, fostering innovative ideas to elevate our services and strengthen our brand reputation for unparalleled joyous travel experiences. </em>', unsafe_allow_html=True)
     #with st.sidebar:
         
-    #model = joblib.load("/Users/radhikavittalshenoy/Downloads/model.pkl")
+    #model = joblib.load("model.pkl")
     tab1, tab2, tab3, tab4,tab5 = st.tabs(['Data Obseravtion center','Data Insights Discovery Center','Hi-Dimensional plot', 'Satisfaction Prediction','Passenger Data Upload'])
 
     with tab1:
@@ -434,12 +434,12 @@ elif selected == 'Analysis Page':
             new_input = {'Gender': [gender], 'Customer Type': [cust_type], 'Age': [age], 'Type of Travel': [t_type], 'Class': [class_type], 'Flight Distance': [flight_Distance], 'Inflight wifi service': [inflight_wifi],
         'Departure/Arrival time convenient': [arrival_conv],'Ease of Online booking':[online_booking],'Gate location':[gate_loc],'Food and drink':[food_drink],'Online boarding':[online_boarding],'Seat comfort':[seat_comfort],'Inflight entertainment':[inflight_entertainment],'On-board service':[onboard_service],'Leg room service':[Leg_room],'Baggage handling':[baggage_handling],'Checkin service':[checkin_service],'Inflight service':[inflight_service],'Cleanliness':[cleanliness],'Departure Delay in Minutes':[dep_delay],'Arrival Delay in Minutes':[arrival_delay]}
             new_input=pd.DataFrame(new_input)
-            loaded_scaler = joblib.load('/Users/radhikavittalshenoy/Documents/minmax_scaler_model.joblib')
-            loaded_scaled_data = joblib.load('/Users/radhikavittalshenoy/Documents/scaled_data.joblib')
+            loaded_scaler = joblib.load('minmax_scaler_model.joblib')
+            loaded_scaled_data = joblib.load('scaled_data.joblib')
             X_test_scaled = loaded_scaler.transform(new_input)
 
             # Load the pickled model
-            with open('/Users/radhikavittalshenoy/Documents/model.pkl', 'rb') as file:
+            with open('model.pkl', 'rb') as file:
                 model = pickle.load(file)
             
             #sample_processed = new_process(new_sample=new_input)
@@ -452,9 +452,9 @@ elif selected == 'Analysis Page':
                 st.error(f'Given the above ratings, the passenger is predicted to be {(pred)}')
             
             if (pred == "satisfied"):
-                st.image("/Users/radhikavittalshenoy/Downloads/satisfied_customer.jpeg")
+                st.image("satisfied_customer.jpeg")
             elif (pred =="neutral or dissatisfied"):
-                st.image("/Users/radhikavittalshenoy/Downloads/unsatisfied_customer.jpg")
+                st.image("unsatisfied_customer.jpg")
 
     with tab5:
         #with st.expander("Upload File"):
