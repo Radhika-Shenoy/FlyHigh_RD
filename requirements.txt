@@ -1,0 +1,14 @@
+pandas
+matplotlib
+seaborn
+plotly
+statsmodels
+pywaffle
+numpy
+hiplot
+pillow
+networkx
+streamlit_option_menu
+scikit-learn
+pickle
+joblib
