@@ -527,7 +527,7 @@ elif selected == "Manager Feedback":
         st.error(f"Please enter a suggestion")
 #elif selected == 'Contact Us':
     #st.sidebar.markdown(f'<a href="https://flyhighproject-7fmy8ekgwxnxu8d4cwyqhr.streamlit.app"><button>Logout</button> </a>', unsafe_allow_html=True)
-st.sidebar.markdown(f'<a href="https://flyhighproject-7fmy8ekgwxnxu8d4cwyqhr.streamlit.app"><button>Logout</button> </a>', unsafe_allow_html=True)
+st.sidebar.markdown(f'<a href="https://flyhighmainpage-l9t2hc8dwoagy3cpn63mju.streamlit.app"><button>Logout</button> </a>', unsafe_allow_html=True)
 
 
 #Standard scalar
