@@ -447,14 +447,14 @@ elif selected == 'Analysis Page':
 
             ## Display Results
             if pred == 'satisfied':
-                st.success(f'Given the above ratings, the passenger is predicted to be {pred}')
+                st.success(f'Given the above ratings, the passenger is predicted to be {pred[0]}')
             elif pred == 'neutral or dissatisfied':
-                st.error(f'Given the above ratings, the passenger is predicted to be {pred}')
+                st.error(f'Given the above ratings, the passenger is predicted to be {pred[0]}')
             
             if (pred == "satisfied"):
                 st.image("satisfied_customer.jpeg")
             elif (pred =="neutral or dissatisfied"):
-                st.image("unsatisfied_customer.jpg",width=250)
+                st.image("unsatisfied_customer.jpg",width=350)
 
     with tab5:
         #with st.expander("Upload File"):
