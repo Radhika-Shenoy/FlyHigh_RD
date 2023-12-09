@@ -322,7 +322,7 @@ elif selected == 'Analysis Page':
 
         options = [
         "Select for visualizing Relationships between numerical joy factors",
-        "Select to Display Distribution and identifying peaks, or detecting gaps amongst the passenger joy factors",
+        "Select to Display Distribution and identifying peaks,detecting gaps and viewing observation frequency patterns amongst the passenger joy factors",
         "Select to display the contribution or proportion of each joy factor in passenger feedback data",]
         
 
