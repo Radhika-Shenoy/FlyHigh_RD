@@ -454,7 +454,7 @@ elif selected == 'Analysis Page':
             if (pred == "satisfied"):
                 st.image("satisfied_customer.jpeg")
             elif (pred =="neutral or dissatisfied"):
-                st.image("unsatisfied_customer.jpg",width=500)
+                st.image("unsatisfied_customer.jpg",height=200)
 
     with tab5:
         #with st.expander("Upload File"):
