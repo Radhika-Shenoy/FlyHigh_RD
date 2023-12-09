@@ -298,7 +298,7 @@ elif selected == 'Analysis Page':
     st.markdown('<em>The FlyHigh R&D team can leverage these intricate passenger experience insights to uncover the depths of customer satisfaction, fostering innovative ideas to elevate our services and strengthen our brand reputation for unparalleled joyous travel experiences. </em>', unsafe_allow_html=True)
     #with st.sidebar:
         
-    #model = joblib.load("model.pkl")
+    #model = joblib.load("model_svc.pkl")
     tab1, tab2, tab3, tab4,tab5 = st.tabs(['Data Obseravtion center','Data Insights Discovery Center','Hi-Dimensional plot', 'Satisfaction Prediction','Passenger Data Upload'])
 
     with tab1:
