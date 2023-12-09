@@ -414,20 +414,20 @@ elif selected == 'Analysis Page':
             gender=1
 
         ## ready.
-        Leg_room = st.radio("Select Leg room service rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        food_drink = st.radio("Select Food and drink rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        gate_loc = st.radio("Select Gate location rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        online_boarding = st.radio("Select Online boarding rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        baggage_handling = st.radio("Select Baggage handling rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        onboard_service = st.radio("Select On-board service rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        inflight_wifi = st.radio("Select Inflight wifi service rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        online_booking = st.radio("Select Online booking rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        cleanliness = st.radio("Select Cleanliness rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        inflight_entertainment = st.radio("Select Inflight entertainment rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        inflight_service = st.radio("Select Inflight service rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        seat_comfort = st.radio("Select Seat comfort rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        checkin_service = st.radio("Select Checkin service rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
-        arrival_conv = st.radio("Select Arrival time convenience rate", options=[0, 1, 2, 3, 4, 5] , horizontal=True)       
+        Leg_room = st.radio("Select Leg room service rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        food_drink = st.radio("Select Food and drink rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        gate_loc = st.radio("Select Gate location rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        online_boarding = st.radio("Select Online boarding rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        baggage_handling = st.radio("Select Baggage handling rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        onboard_service = st.radio("Select On-board service rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        inflight_wifi = st.radio("Select Inflight wifi service rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        online_booking = st.radio("Select Online booking rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        cleanliness = st.radio("Select Cleanliness rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        inflight_entertainment = st.radio("Select Inflight entertainment rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        inflight_service = st.radio("Select Inflight service rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        seat_comfort = st.radio("Select Seat comfort rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        checkin_service = st.radio("Select Checkin service rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)
+        arrival_conv = st.radio("Select Arrival time convenience rating", options=[0, 1, 2, 3, 4, 5] , horizontal=True)       
        
         ## Create a button
         if st.button('Predict Satsfication', help='Click to predict satisfaction'):
